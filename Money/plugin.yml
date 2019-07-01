@@ -1,0 +1,5 @@
+name: PayMoney
+main: NabievDev\money\Main
+api: 3.4.0
+version: 1.0
+author: NabievDev
