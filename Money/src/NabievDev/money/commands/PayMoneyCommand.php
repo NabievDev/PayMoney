@@ -39,12 +39,12 @@ class PayMoneyCommand extends PluginCommand
         $money = Server::getInstance()->getPluginManager()->getPlugin("Economy")->getMoney($sender->getName());
         if($money < 1000000)
         {
-            $sender->sendMessage("§cВыводить деньги можно только после §b1 000 000 §cмонет!");
+            $sender->sendMessage('§cВыводить деньги можно только после §b1 000 000 §cмонет!');
             return true;
         }
         if($money >= 1000000)
         {
-            $sender->sendMessage("§cЧтобы снять деньги со счета, надо столько же купить купонов. 1 купон - 1 настоящий рубль. Купить вы их можете на сайте автодоната: §bhttps://shop.huynya.com");
+            $sender->sendMessage('§cЧтобы снять деньги со счета, надо столько же купить купонов. 1 купон - 1 настоящий рубль. Купить вы их можете на сайте автодоната: §bhttps://shop.huynya.com');
             return true;
         }
         return true;
