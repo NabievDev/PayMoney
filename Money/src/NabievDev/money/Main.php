@@ -15,6 +15,6 @@ class Main extends PluginBase
     public function onEnable()
     {
         Server::getInstance()->getCommandMap()->register("paymoney", new PayMoneyCommand("paymoney", $this));
-        $this->getLogger()->info("§cPlugin by vk.com/nabievdev");
+        $this->getLogger()->info('§cPlugin by vk.com/nabievdev');
     }
 }
